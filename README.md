@@ -1,25 +1,8 @@
 #**Finding Lane Lines on the Road** 
 
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
----
-
-### Reflection
-
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consists of five steps which are as follows:
+My pipeline consists of the following steps:
 
 1) Convert image into grayscale
 2) Apply Gaussian smoothing to grayscaled image
@@ -32,14 +15,7 @@ My pipeline consists of five steps which are as follows:
 
 ###2. Identify potential shortcomings with your current pipeline
 
-My current pipeline might fail in the following circumstances:
-1) Night time or sunny days during which it becomes difficult to identify yellow lanes
-2) During bad weather (snow or rain)
-3) While passing under the bridge or in shadows or trees, advertisement board etc.
-
-
-###3. Suggest possible improvements to your pipeline
-
-Some improvements that can made to my pipeline are as follows:
-1) Fine tuning the parameters for the hough transform or canny edge detection to make it work in sunny days, night time or in bad weather conditions
-2) The pipeline was only tested when there is no traffic. It would be interesting to see how it behaves in heavy traffic and improvements can be made to make it more robust.
+My current pipeline fails for the optional challenge video, this might be due to many reasons such as:
+1. uneven color of the road
+2. navigating around a curve
+3. shadows might interfere with the pipeline
